@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ESD Apartments</title>
+
+
+<link href="css/lightbox.css" type="text/css" rel="stylesheet"/>
+<script src="js/jquery.min.js"></script>
+
+
+<script-no trailing comma after very last image element!
+	],
+	displaymode: {type:'auto', pause:3000, cycles:0, wraparound:false},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 1000, //transition duration (milliseconds)
+	descreveal: "ondemand",
+	togglerid: "" type="text/javascript" src="js/fadeslideshow.js"></script>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<link href="css/phone.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 0px) and (max-width: 320px)" >
+<link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 321px) and (max-width: 768px)" >
+<link href="css/main.css" rel="stylesheet" type="text/css"  media="only screen and (min-width: 769px)">
+<link href="css/resetStyle.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+</head>
+
+<body id="body2">
+<div id="wrapper">
+<div id="header"></div>
+
+<div id="nav">
+ <ul>
+   <li><a href="index.html" class="navLinks">Home</a></li><li>|</li>
+   <li><a href="about.html" class="navLinks">About</a></li><li>|</li>
+   <div class="dropdown">
+  			<button onClick="myFunction()" class="dropbtn">Apartments</button>
+  				<div id="myDropdown" class="dropdown-content">
+                <a href="type1.html">Type1</a>    
+    			<a href="type2.html">Type2</a>
+                <a href="type3.html">Type3 </a>
+  				</div>
+			</div>
+   </li><li>|</li>
+   <li><a href="booking.html" class="navLinks">Booking</a></li><li>|</li>
+   <li><a href="contact.html" class="navLinks">Contact</a></li>
+ </ul>
+</div>
+
+
+<div id="colB1" style="height:auto" >
+  <form action="#" method="post">
+    <div style="text-align: center;">
+      <label style="color:white" for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+  
+      <label style="color:white" for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+  
+      <label style="color:white" for="address">Address:</label><br>
+      <input type="text" id="address" name="address" required><br>
+      <label style="color:white" for="zip-code">Zip Code:</label><br>
+      <input type="number" id="zip-code" name="zip-code" required><br><br>
+  
+      <label style="color:white" for="phone">Phone No.:</label><br>
+      <input type="tel" id="phone" name="phone" required><br><br>
+  
+      <label style="color:white" for="consultation-date">Preferred date for consultation:</label><br>
+      <input type="date" id="consultation-date" name="consultation-date" required><br><br>
+  
+      <label style="color:white" for="room">Appartment Preference:</label><br>
+      <select style="background-color:#526C7A; color:white"  id="room" name="room" required>
+        <option value="room">Select your preferred Apartment</option>
+        <option value="dolar">Type 1: 2 Bedroom Apartment</option>
+        <option value="praesent">Type 2: 1 Bedroom Apartment</option>
+        <option value="quisque">Type 3: Small Apartment</option>
+      </select><br><br>
+  
+      <label style="color:white" for="comments">Message (optional):</label><br>
+      <textarea id="comments" name="comments" rows="3" cols="40"></textarea><br><br>
+  
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  <hr>
+		<div class="gallery-wrapper">
+		<div class="responsive">
+              <div class="gallery">
+                 <a  href="images/home2Apart.jpg" data-lightbox="mushroom">
+                  <img src="images/booktype1.jpg" alt="Image1" width="150" height="150" class="hover-effect"/>
+                </a>
+                <div class="desc"><p style="color:white">2 Bedroom Apartment</p></div>
+              </div>
+            </div>
+            <!---  -->
+            
+            <div class="responsive">
+              <div class="gallery">
+                <a  href="images/home1Apart.jpg" data-lightbox="mushroom">
+                  <img src="images/booktype2.jpg" alt="Image1" width="150" height="150" class="hover-effect"/>
+                </a>
+                <div class="desc"><p style="color:white">1 Bedroom Apartment</p></div>
+              </div>
+            </div>
+            
+            <div class="responsive">
+              <div class="gallery">
+                <a href="images/homeSmallApart.jpg" data-lightbox="mushroom">
+                  <img src="images/homeSmallThumb.jpg" alt="Image1" width="150" height="150" class="hover-effect"/>
+                </a>
+                <div class="desc"><p style="color:white">Small Apartment</p></div>
+              </div>
+            </div>
+
+        </div>
+  
+</div>
+
+<div class="clearFloat"></div>
+
+<div id="footer">
+<div id="sitemap">
+<ul>
+	<li><a href="index.html" class="sitemapLink">&nbsp <u>Home</u></a></li>
+      <li><a href="about.html" class="sitemapLink">&nbsp <u>About</u></a></li>
+    <li class="sitemapText">&nbsp Apartments:</li>
+    <li><a href="type1.html" class="sitemapLink2"> &nbsp&nbsp <u>Type1</u></a></li>
+    <li><a href="type2.html" class="sitemapLink2"> &nbsp&nbsp <u>Type2</u></a></li>
+    <li><a href="type3.html" class="sitemapLink2"> &nbsp&nbsp <u>Type3</u></a></li>
+   <li class="sitemapText" ><a href="booking.html" class="sitemapLink">-Booking-</a></li>
+   <li><a href="contact.html" class="sitemapLink">&nbsp <u>Contact</u></a></li>
+</ul>
+</div>
+
+</div>
+
+
+</div>
+<script src="js/lightbox.js"></script>
+</body>
+</html>

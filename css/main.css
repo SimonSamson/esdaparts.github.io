@@ -1,0 +1,317 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background:url(../images/bg1.jpg); 
+	font-family: Arial, Helvetica, sans-serif;
+	background-repeat: no-repeat;
+	background-color:#2c3644;
+}
+#body2 {
+	background:url(../images/bg2.jpg); 
+	background-color:#2f4750;
+}
+#wrapper {
+	width: 960px;
+    margin: auto;
+	background-color: #FFF;
+}
+
+#header {
+	width: 960px;
+	height: 210px;
+	background: url(../images/headerdesktop.jpg) no-repeat;
+}
+
+#nav {
+	width: 960px;
+	height: 40px;
+	padding-top: 8px;
+	text-align: center;
+	background-color: #b69272;
+}
+
+#nav li {
+	display: inline;
+	list-style: none;
+	padding: 0 15px;
+}
+
+#banner {
+	width: 960px;
+	height: 240px;
+	background-color: #36C;
+}
+
+
+#col1 {
+	width: 320px;
+	height:600px;
+	padding:10px;
+    float: left;
+	background-color:#464646;
+}
+
+#col2 {
+	width: 320px;
+	height:600px;
+	padding:10px;
+    float: left;
+	background-color:#999999;
+	background-image: linear-gradient(180deg, #999999, white);
+}
+
+#col3 {
+	width: 320px;
+	height: 600px;
+	padding:10px;
+    float: left;
+	background-color:#464646;
+}
+
+#colB1 {
+	width: 960px;
+	height: auto;
+	padding:10px;
+    float: left;
+	background-color:#464646;
+}
+
+#colB2 {
+	width: 960px;
+	height: auto;
+	padding:10px;
+    float: left;
+	background-color:#999999;
+}
+
+
+#colC {
+	width: 960px;
+	height: auto;
+	padding:10px;
+    float: left;
+	background-color:#999999;
+}
+
+#colC2 {
+	width: 960px;
+	height: 600px;
+	padding:10px;
+    float: left;
+	background-color:#464646;
+}
+#colC3 {
+	width: 960px;
+	height: auto;
+	padding:10px;
+    float: left;
+	background-color:#5b5b5b;
+}
+
+#footer {
+	background: url(../images/footerdesktop.jpg) no-repeat;
+	width: 960px;
+	height: 200px;
+}
+
+.navLinks {
+	color: #FFF;
+	font-size: 18px;
+	text-decoration: none;
+	font-family:Helvetica, sans-serif;
+}
+
+.navLinks:hover {
+	color: #FF0;
+}
+
+.clearFloat {
+	clear: both;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color:#b69272;
+    color: #FFF;
+	font-size: 18px;
+    border: none;
+    cursor: pointer;
+	font-family:Helvetica, sans-serif;
+
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    color: #FF0;
+		
+	
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+	bottom:0px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#b69272;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+	font-family:Helvetica, sans-serif;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #FFF;
+	font-size: 18px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	text-align:left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #9d6636;
+	color: #FF0;
+	}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#banner{
+	z-index:50;
+}
+
+
+.title {
+	font-size:36px;
+	color:black;
+}
+
+/*Image gallery */
+div.gallery {
+  border: 1px solid #ccc;
+  border-color: black;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  border-color: black;
+   opacity: 0.5;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.responsiveHome{
+  padding: 0 6px;
+  width: 75%;
+}
+
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#sitemap{
+	padding:10px;
+	padding-left: 20px;
+    float: left;
+}
+
+.sitemapLink{
+	color: #FFF;
+	font-size: 16px;
+	text-decoration: none;
+}
+.sitemapText{
+	color: #FFF;
+	font-size: 16px;
+	text-decoration: none;
+}
+.sitemapLink:hover{
+	color: #FF0;
+}
+
+.sitemapLink2{
+	color: #FFF;
+	font-size: 12px;
+	text-decoration: none;
+}
+.sitemapLink2:hover{
+	color: #FF0;
+}
+#rcorners{
+	border-radius: 35px;
+ 	border: 2px solid #73AD21;
+	
+}
+
+input[type="text"] {
+ background-color: #526C7A;
+ color:white;	
+ 
+}
+input[type="email"] {
+ background-color: #526C7A;
+ color:white;	
+ 
+}
+input[type="tel"] {
+ background-color: #526C7A;
+ color:white;	
+ 
+}
+input[type="number"] {
+ background-color: #526C7A;
+ color:white;	
+ 
+}
+input[type="date"] {
+ background-color: #526C7A;
+ color:white;	
+ 
+}
+textarea{
+background-color: #526C7A;
+ color:white;	
+}
+select option {
+background-color: #526C7A;
+ color:white;	
+}
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}

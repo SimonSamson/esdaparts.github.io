@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ESD Apartments</title>
+
+<link href="css/lightbox.css" type="text/css" rel="stylesheet"/>
+<script src="js/jquery.min.js"></script>
+
+<script src="js/fadeslideshow.js"></script>
+
+<style>
+#contentContainer img {
+    max-width: 900px;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+}
+</style>
+
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+function loadContent(url) {
+    var contentContainer = document.getElementById('contentContainer');
+    if (url.endsWith('.html')) {
+        // If it's an HTML file, load it dynamically
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                contentContainer.innerHTML = data;
+            })
+            .catch(error => console.error('Error:', error));
+    } else if (url.endsWith('.jpg')) {
+        // If it's an image file, display it in the content container
+        contentContainer.innerHTML = `<img src="${url}" alt="Image" onclick="showImageMap()">`;
+    }
+}
+
+function showImageMap() {
+    // Reset content container to display the image map
+    document.getElementById('contentContainer').innerHTML = `
+        <img src="images/type2map.png" alt="tmap2" usemap="#map2" style="width: 900px; height: 700px;">
+        <map name="map2">
+            <area shape="rect" coords="43,26,358,183" alt="kitchen2" onclick="loadContent('images/kitchen2.jpg')">
+            <area shape="rect" coords="377,22,866,185" alt="bed2" onclick="loadContent('images/bed2.jpg')">
+            <area shape="rect" coords="41,200,650,519" alt="liv2" onclick="loadContent('images/liv2.jpg')">
+            <area shape="rect" coords="661,268,862,519" alt="bath2" onclick="loadContent('images/bath2.jpg')">
+            <area shape="rect" coords="39,528,220,682" alt="laundry2" onclick="loadContent('images/laundry2.jpg')">
+        </map>`;
+}
+</script>
+
+<link href="css/phone.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 0px) and (max-width: 320px)" >
+<link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 321px) and (max-width: 768px)" >
+<link href="css/main.css" rel="stylesheet" type="text/css"  media="only screen and (min-width: 769px)">
+<link href="css/resetStyle.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+</head>
+
+<body id="body2">
+<div id="wrapper">
+<div id="header"></div>
+
+<div id="nav">
+ <ul>
+   <li><a href="index.html" class="navLinks">Home</a></li><li>|</li>
+   <li><a href="about.html" class="navLinks">About</a></li><li>|</li>
+   <div class="dropdown">
+  			<button onClick="myFunction()" class="dropbtn">Apartments</button>
+  				<div id="myDropdown" class="dropdown-content">
+                <a href="type1.html">Type1</a>    
+    			<a href="type2.html">Type2</a>
+                <a href="type3.html">Type3 </a>
+  				</div>
+			</div>
+   </li><li>|</li>
+   <li><a href="booking.html" class="navLinks">Booking</a></li><li>|</li>
+   <li><a href="contact.html" class="navLinks">Contact</a></li>
+ </ul>
+</div>
+
+    <div id="colC2" style="height:auto">
+        <br/>
+        <center><span class="title" style="color:white">Type 2: 1 Bedroom Apartment</span></center>
+        <br/>
+        <center><p style="color:white"> Take a tour around the apartment with this map.</p></center>
+        <br/>
+        <center> <a href="type2.html" style="color:white">Map</a>
+        <br/>
+        <div class="responsive" id="contentContainer">
+            <img src="images/type2map.png" alt="tmap2" usemap="#map2" style="width: 900px; height: 700px;">
+            <map name="map2">
+                <area shape="rect" coords="43,26,358,183" alt="kitchen2" onclick="loadContent('images/kitchen2.jpg')">
+            <area shape="rect" coords="377,22,866,185" alt="bed2" onclick="loadContent('images/bed2.jpg')">
+            <area shape="rect" coords="41,200,650,519" alt="liv2" onclick="loadContent('images/liv2.jpg')">
+            <area shape="rect" coords="661,268,862,519" alt="bath2" onclick="loadContent('images/bath2.jpg')">
+            <area shape="rect" coords="39,528,220,682" alt="laundry2" onclick="loadContent('images/laundry2.jpg')">
+            </map>
+        </div>
+
+        <br/> 
+        <br/>
+    </div>
+
+    <div class="clearFloat"></div>
+
+    <div id="footer">
+    <div id="sitemap">
+<ul>
+	<li><a href="index.html" class="sitemapLink">&nbsp <u>Home</u></a></li>
+    <li><a href="about.html" class="sitemapLink">&nbsp <u>About</u></a></li>
+    <li class="sitemapText">&nbsp Apartments:</li>
+    <li><a href="type1.html" class="sitemapLink2"> &nbsp&nbsp <u>Type1</u></a></li>
+    <li><a href="type2.html" class="sitemapLink2"> &nbsp&nbsp <u>-Type2-</u></a></li>
+    <li><a href="type3.html" class="sitemapLink2"> &nbsp&nbsp <u>Type3</u></a></li>
+   <li><a href="booking.html" class="sitemapLink">&nbsp <u>Booking</u></a></li>
+   <li><a href="contact.html" class="sitemapLink">&nbsp <u>Contact</u></a></li>
+</ul>
+</div></div>
+</div>
+
+<script src="js/lightbox.js"></script>
+</body>
+</html>
